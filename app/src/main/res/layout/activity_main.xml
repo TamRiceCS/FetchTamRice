@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/fetch_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="@color/frosted_glass"
+            android:textSize="30sp"
+            android:text="@string/title" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:background="@color/frosted_glass"
+            android:scrollbars="vertical"
+            android:scrollbarSize="8dip"
+            android:layout_weight="5"/>
+
+        <TextView
+            android:id="@+id/closing"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="@color/frosted_glass"
+            android:textSize="30sp"
+            android:text="@string/closing" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
